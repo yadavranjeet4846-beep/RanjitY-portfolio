@@ -613,3 +613,58 @@ body.light-theme nav a {
 .project-btn.secondary:hover {
     background: #17243a;
 }
+
+/* Mobile Navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    background: #17243a;
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+        order: 4;
+        padding: 8px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px 10px;
+    }
+}

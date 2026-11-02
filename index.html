@@ -5,24 +5,39 @@
   <meta name="viewport" 
   content="width=device-width, initial-scale=1.0">
   <title>My Portfolio | Developer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 
   <header>
     <h2>MyPortfolio<span>.</span></h2>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <button id="theme-toggle" type="button"
-        aria-label="Switch to light theme">
-    ☀️ Light Mode
-</button>
-    </nav>
+    <nav class="navbar">
+    <a href="#home" class="logo"></a>
+
+    <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+    >
+        ☰
+    </button>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <button id="theme-toggle" type="button">
+        ☀️ Light Mode
+    </button>
+</nav>
   </header>
 
   <main>
@@ -44,7 +59,7 @@
             <a href="#projects" class="btn-primary">View My Work</a>
             <a href="#contact" class="btn-outline">Contact Me</a>
             <a
-            href="Ranjit-Kumar-Yadav-Resume.pdf"
+            href="files/Ranjit-Kumar-Yadav-Resume.pdf"
             class="btn"
             download
             >Download Rasume</a>
@@ -53,7 +68,7 @@
 
     <div class="hero-image">
     <img
-        src="Photo.png"
+        src="images/Photo.png"
         alt="Ranjit Kumar yadav - Web and App Developer"
     >
 </div>
@@ -286,6 +301,6 @@
 </section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
